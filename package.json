@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server  --progress",
-    "build": "webpack --progress",
-    "watch": "webpack --progress --watch"
+    "start": "webpack-dev-server --config build/webpack.dev.config.js  --progress",
+    "build": "webpack --progress --config build/webpack.prod.config.js",
+    "watch": "webpack --progress --watch --config build/webpack.prod.config.js"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.17.8",
@@ -30,7 +30,8 @@
     "style-loader": "^3.3.1",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
   },
   "browserslist": [
     "last 20 versions",

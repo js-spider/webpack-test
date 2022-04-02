@@ -6,11 +6,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
+
 module.exports = {
   mode: 'development',
   entry: {
-    main: './src/index.js',
-    test: './src/test.js'
+    main: './src/babelTest/index.js',
+    test: './src/babelTest/test.js'
   },
   output: {
     filename: '[name].js',

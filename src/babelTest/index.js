@@ -37,4 +37,6 @@ function* foo() {
 const fo = foo()
 fo.next()
 
+abc
+
 app.appendChild(div)

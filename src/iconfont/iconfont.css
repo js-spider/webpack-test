@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shezhi:before {
+    content: "\e606";
+}
+
+.icon-shouyi:before {
+    content: "\e607";
+}
+
+.icon-gerenrenzheng:before {
+    content: "\e608";
+}
+
+.icon-bofang:before {
+    content: "\e609";
+}
+
+.icon-bangonglou:before {
+    content: "\e60a";
+}

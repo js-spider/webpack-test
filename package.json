@@ -1,0 +1,41 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server  --progress",
+    "build": "webpack --progress",
+    "watch": "webpack --progress --watch"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.17.8",
+    "core-js": "^3.21.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "less-loader": "^10.2.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss-loader": "^6.2.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "browserslist": [
+    "last 20 versions",
+    "not dead"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

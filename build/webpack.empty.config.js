@@ -2,14 +2,11 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // webpack4.x 不支持使用extract-text-webpack-plugin 使用 mini-css-extract-plugin 代替
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 module.exports = {
-  entry: {
-    main: './src/main.js',
-    test: './src/test.js'
-  },
+  mode: 'production',
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, '../dist')
@@ -93,6 +90,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'htmlWebpackPlugin',
       template: './index.html',

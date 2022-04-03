@@ -1,0 +1,1 @@
+import './splitChunks/index'
